@@ -1,0 +1,14 @@
+.navbar-inverse {
+    background-color: #2a2f34;
+    border-color: #121319;
+    border-radius: 0;
+}
+
+.navbar a {
+    color: #00B6FF !important;
+}
+
+.navbar-brand {
+    padding-left: 60px;
+    background: transparent url(../img/favicon.png) scroll no-repeat left center;
+}
