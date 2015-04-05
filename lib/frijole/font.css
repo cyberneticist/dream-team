@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Frijole';
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local('Frijole'),
+		/* from  */
+		url('./Frijole_400.eot?#iefix') format('embedded-opentype'),
+		/* from http://fonts.gstatic.com/s/frijole/v5/JMJmIdqpEk7-RyNfk_4Nrw.woff */
+		url('./Frijole_400.woff') format('woff'),
+		/* from http://fonts.gstatic.com/s/frijole/v5/KY1jGfdOyy7wGqIgHMe1-A.ttf */
+		url('./Frijole_400.ttf') format('truetype'),
+		/* from http://fonts.gstatic.com/l/font?kit=3YcIFpNj3XLc1VT6rDgEBQ#Frijole */
+		url('./Frijole_400.svg#Frijole') format('svg');
+}

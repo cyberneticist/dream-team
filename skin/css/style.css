@@ -1,14 +1,41 @@
+body {
+    font-family: "Roboto", sans-serif;
+    padding-top: 50px;
+}
+
 .navbar-inverse {
     background-color: #2a2f34;
     border-color: #121319;
     border-radius: 0;
+    -webkit-box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
+    -moz-box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
+    box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
 }
 
-.navbar a {
-    color: #00B6FF !important;
+.navbar-inverse .navbar-nav > li > a {
+    color: #00B6FF;
+    border-style: none solid;
+    border-width: 1px;
+    border-color: #33373b;
 }
 
-.navbar-brand {
+.navbar-inverse .navbar-brand {
     padding-left: 60px;
-    background: transparent url(../img/favicon.png) scroll no-repeat left center;
+    background: transparent url(../img/logo.png) scroll no-repeat left center;
+    font-family: "Frijole", cursive;
+    font-size: 25px;
+    color: #00B6FF;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: #fffff2;
+    background-image: url(../img/logo-hover.png);
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #343434;
+    color: #fffff2;
 }
