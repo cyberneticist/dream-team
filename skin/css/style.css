@@ -1,6 +1,8 @@
 body {
     font-family: "Roboto", sans-serif;
     padding-top: 50px;
+    background: #000;
+    color: #efc9a0;
 }
 
 .navbar-inverse {
@@ -38,4 +40,46 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover {
     background-color: #343434;
     color: #fffff2;
+}
+
+
+footer hr {
+    border-top-color: #20140b;
+    border-top-width: 2px;
+    margin: 10px 0;
+}
+
+footer h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #70523d;
+    margin: 0;
+}
+
+footer ul li,
+footer ul li a {
+    color: #552c09;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+footer h4,
+footer ul li {
+    cursor: pointer;
+}
+
+
+footer h4:hover,
+footer ul li:hover,
+footer ul li a:hover{
+    color: #f5ebd1;
+}
+
+footer h6 {
+    color: #433a2e;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
 }
