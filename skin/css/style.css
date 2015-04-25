@@ -42,6 +42,134 @@ body {
     color: #fffff2;
 }
 
+section .container h1 {
+    color: #fef092;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 2px solid #552b12;
+    text-align: center;
+}
+
+section .container h1 span {
+    position: relative;
+    top: 8px;
+    display: inline-block;
+    background: #000;
+    padding: 0 15px;
+}
+
+section .jumbotron {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    font-weight: normal;
+    padding: 80px 60px 80px 0;
+}
+
+section .jumbotron h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 41px;
+    font-weight: normal;
+    margin: 10px 0 20px 0;
+}
+
+section .jumbotron p {
+    font-weight: 300;
+    font-size: 21px;
+    color: #333;
+    padding: 16px 0;
+    margin: 0;
+}
+
+.background,
+.background-lines {
+    left: 0;
+    top: 50px;
+    position: absolute;
+    height: 350px;
+    width: 100%;
+}
+
+.background {
+    top: 50px;
+    z-index: 1;
+    background: url("../img/background.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+}
+
+.background-lines {
+    background: url("../img/header-lines.png") 0 0 repeat;
+    z-index: 2;
+}
+
+.news-section,
+.progress-section{
+    height: 350px;
+}
+
+.news-section {
+    position: relative;
+    z-index: 3;
+}
+
+.news-section .jumbotron {
+    background: transparent;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+.news-section .jumbotron,
+.news-section .jumbotron p {
+    text-align: center;
+}
+
+.news-section .jumbotron h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 61px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: none;
+    color: #000;
+}
+
+.news-section .jumbotron p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    font-weight: 300;
+    color: #000;
+}
+
+.news-section .jumbotron p strong {
+    font-weight: 700;
+}
+
+.news-section .jumbotron h1 {
+    text-shadow: 0px 3px 0px rgba(192, 192, 192, 0.25);
+}
+
+.news-section .jumbotron p {
+    text-shadow: 0px 2px 0px rgba(192, 192, 192, 0.25);
+}
+
+.progress-section {
+    margin-top: 30px;
+}
 
 footer hr {
     border-top-color: #20140b;
@@ -100,13 +228,13 @@ footer h6 {
 }
 
 .social-robot {
-    background-image: url(/skin/img/robot-icon.png);
+    background-image: url(../img/robot-icon.png);
     background-size: 65px 40px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
 
 .social-armory {
-    background-image: url(/skin/img/wow-icon.png);
+    background-image: url(../img/wow-icon.png);
     background-size: 100% 100%;
 }
