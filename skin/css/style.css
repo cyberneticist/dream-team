@@ -83,3 +83,30 @@ footer h6 {
     text-transform: uppercase;
     margin: 0;
 }
+
+.social {
+    border: 1px solid #552c09;
+    height: 72px;
+    width: 72px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #1c1e1b;
+}
+
+.social-progress {
+    background-image: url(http://wowprogress.com/guild_img/519173/out/type.site);
+    background-size: 74px 74px;
+    background-position: -1px -1px;
+}
+
+.social-robot {
+    background-image: url(/skin/img/robot-icon.png);
+    background-size: 65px 40px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social-armory {
+    background-image: url(/skin/img/wow-icon.png);
+    background-size: 100% 100%;
+}
