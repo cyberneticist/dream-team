@@ -1,0 +1,302 @@
+/* common styles */
+body {
+    font-family: "Roboto", sans-serif;
+    padding-top: 50px;
+    background: #000;
+    color: #efc9a0;
+}
+
+/* nav */
+.navbar-inverse {
+    background-color: #2a2f34;
+    border-color: #121319;
+    border-radius: 0;
+    -webkit-box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
+    -moz-box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
+    box-shadow: 0px -1px 8px 3px rgba(18,19,25,1);
+
+   .navbar-nav {
+     > li > a {
+       color: #00B6FF;
+       border-style: none solid;
+       border-width: 1px;
+       border-color: #33373b;
+
+       &:hover {
+         background-color: #343434;
+         color: #fffff2;
+       }
+     }
+
+     > .active > a,
+     > .active > a:focus {
+       background-color: #343434;
+       color: #fffff2;
+     }
+   }
+
+   .navbar-brand {
+      padding-left: 60px;
+      background: transparent url(../img/logo.png) scroll no-repeat left center;
+      font-family: "Frijole", cursive;
+      font-size: 25px;
+      color: #00B6FF;
+
+      &:hover,
+      &:focus {
+         color: #fffff2;
+         background-image: url(../img/logo-hover.png);
+      }
+   }
+}
+
+/* section */
+section {
+  .container {
+    h1 {
+      color: #fef092;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: uppercase;
+      border-bottom: 2px solid #552b12;
+      text-align: center;
+
+      span {
+        position: relative;
+        top: 8px;
+        display: inline-block;
+        background: #000;
+        padding: 0 15px;
+      }
+    }
+  }
+
+  .jumbotron {
+    font-family: 'Roboto', sans-serif;
+    background: none;
+    font-weight: normal;
+    padding: 80px 60px 80px 0;
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      font-size: 41px;
+      font-weight: normal;
+      margin: 10px 0 20px 0;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 21px;
+      color: #333;
+      padding: 16px 0;
+      margin: 0;
+    }
+  }
+
+  .carousel-indicators {
+    li {
+      border-color: #fef092;
+    }
+
+    .active {
+      background-color: #fef092;
+    }
+  }
+
+  .background,
+  .background-lines {
+    left: 0;
+    position: absolute;
+    height: 350px;
+    width: 100%;
+  }
+
+  .background {
+    z-index: 1;
+    background: url("../img/background.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px -10px 10px 5px rgba(0,0,0,0.75);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+  }
+
+  .background-lines {
+    background: url("../img/header-lines.png") 0 0 repeat;
+    z-index: 2;
+  }
+}
+
+/* news section */
+.news-section {
+  &, & .item {
+    height: 350px;
+  }
+
+  .jumbotron {
+     position:relative;
+     z-index: 3;
+     background: transparent;
+     padding-top: 40px;
+     padding-bottom: 60px;
+     margin-bottom: 0;
+
+     &, & p {
+       text-align: center;
+     }
+
+     h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 61px;
+        font-weight: 400;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        border: none;
+        color: #000;
+        text-shadow: 0px 3px 0px rgba(192, 192, 192, 0.25);
+     }
+
+     p {
+       font-family: 'Roboto', sans-serif;
+       font-size: 29px;
+       font-weight: 300;
+       color: #000;
+       text-shadow: 0px 2px 0px rgba(192, 192, 192, 0.25);
+
+       strong {
+          font-weight: 700;
+       }
+     }
+  }
+}
+
+/* progress section */
+.progress-section {
+  margin-top: 0;
+
+  h1 {
+    margin-bottom: 35px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 40px;
+    margin: 10px 0;
+    text-align: center;
+    background: transparent url(../img/raids/soo.jpg) scroll no-repeat 0 50%;
+    position: relative;
+    text-shadow: 0px 2px 0px #000;
+    padding: 9px 0 11px 0;
+
+    .background-lines {
+      height: 40px;
+      width: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &.soo {
+      background-position: 0 -140px;
+    }
+
+    &.brf {
+      background-image: url(../img/raids/brf.jpg);
+      background-position: 0 -310px;
+    }
+
+    &.hfc {
+      background-image: url(../img/raids/hfc.jpg);
+      background-position: 0 -259px;
+    }
+
+    &.hm {
+      background-image: url(../img/raids/hm.jpg);
+      background-position: 0 -300px;
+    }
+  }
+}
+
+/* footer */
+footer {
+  hr {
+    border-top-color: #20140b;
+    border-top-width: 2px;
+    margin: 10px 0;
+  }
+
+  h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #70523d;
+    margin: 0;
+    cursor: pointer;
+
+    &:hover {
+      color: #f5ebd1;
+    }
+  }
+
+  ul li {
+    cursor: pointer;
+
+    &, & a {
+      color: #552c09;
+      font-size: 13px;
+      font-weight: normal;
+
+      &:hover {
+        color: #f5ebd1;
+      }
+    }
+  }
+
+  h6 {
+    color: #433a2e;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .social {
+    border: 1px solid #552c09;
+    height: 72px;
+    width: 72px;
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #1c1e1b;
+
+    &.social-progress {
+      background-image: url(http://wowprogress.com/guild_img/519173/out/type.site);
+      background-size: 74px 74px;
+      background-position: -1px -1px;
+    }
+
+    &.social-robot {
+      background-image: url(../img/robot-icon.png);
+      background-size: 65px 40px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &.social-armory {
+      background-image: url(../img/wow-icon.png);
+      background-size: 100% 100%;
+    }
+  }
+}

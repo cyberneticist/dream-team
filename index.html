@@ -10,12 +10,13 @@
         <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/lib/roboto/font.css" rel="stylesheet">
         <link href="/lib/frijole/font.css" rel="stylesheet">
-        <link href="/skin/css/style.css" rel="stylesheet">
+        <link href="/skin/css/style.less" type="text/css" rel="stylesheet/less">
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="/lib/html5shiv/html5shiv.min.js"></script>
             <script src="/lib/respondjs/respond.min.js"></script>
         <![endif]-->
+        <script src="/lib/lessjs/less.min.js"></script>
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,12 +42,35 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-        <div class="background"></div>
-        <div class="background-lines"></div>
         <section class="news-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
+            <div id="news-scroller" class="carousel slide" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#news-scroller" data-slide-to="0" class="active"></li>
+                    <li data-target="#news-scroller" data-slide-to="1"></li>
+                    <li data-target="#news-scroller" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="background"></div>
+                        <div class="background-lines"></div>
+                        <div class="jumbotron">
+                            <h1>Iron Maidens are down</h1>
+                            <p>Now we have 1/7M HM + 8/10H BRF done!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="background"></div>
+                        <div class="background-lines"></div>
+                        <div class="jumbotron">
+                            <h1>Iron Maidens are down</h1>
+                            <p>Now we have 1/7M HM + 8/10H BRF done!</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="background"></div>
+                        <div class="background-lines"></div>
                         <div class="jumbotron">
                             <h1>Iron Maidens are down</h1>
                             <p>Now we have 1/7M HM + 8/10H BRF done!</p>
@@ -60,6 +84,22 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <h1><span>Watch our progress</span></h1>
+                        <h2 class="hfc">
+                            <div class="background-lines"></div>
+                            Hellfire Citadel
+                        </h2>
+                        <h2 class="brf">
+                            <div class="background-lines"></div>
+                            Blackrock Foundry
+                        </h2>
+                        <h2 class="hm">
+                            <div class="background-lines"></div>
+                            Highmaul
+                        </h2>
+                        <h2 class="soo">
+                            <div class="background-lines"></div>
+                            Siege of Orgrimmar
+                        </h2>
                     </div>
                 </div>
             </div>
